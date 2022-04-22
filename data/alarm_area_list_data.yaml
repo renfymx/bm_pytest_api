@@ -1,0 +1,8 @@
+#必填项验证
+- adCode: '3306'
+  adLevel: ''
+- adCode: ''
+  adLevel: '3'
+- adLevel: '1'
+- adCode: '3306'
+

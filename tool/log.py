@@ -2,6 +2,7 @@ import logging
 #设置日志颜色的包
 import colorlog
 import datetime
+import os
 
 
 '''
@@ -48,7 +49,7 @@ logger = logging.getLogger('test')
 # 输出到控制台
 console_handler = logging.StreamHandler()
 # 输出到文件
-path = "./log"
+path = r"D:\bm_pytest_api\log"
 '''获取当前年月日作为日志文件名'''
 fileName = str(datetime.datetime.now().year) + '-' + str(datetime.datetime.now().month) + '-' + str(
     datetime.datetime.now().day) + '.log'
@@ -97,3 +98,4 @@ if __name__ == '__main__':
     logger.warning('颜色')
     logger.error('error')
     logger.critical('critical')
+    print(os.getcwd())
